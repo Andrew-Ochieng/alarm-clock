@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-gray-300 text-lg">
+    <section class="text-center space-y-6 mt-32 bg-blue-200 py-16">
+        <p class="font-semibold">Alarm Clock</p>
+        <div class="text-4xl font-extrabold" id="clock"></div>
+        <input class="p-2 rounded-full shadow-md hover:shadow-md" onchange="setAlarmTime(this.value)" type="datetime-local" name="alarmTime">
+        <div class="controls">
+            <button class="bg-blue-400 shadow-lg hover:shadow-xl px-3 py-2 m-4 hover:bg-blue-500 duration-300 rounded-full" onclick="setAlarm()" id="set-alarm">Set Alarm</button>
+            <button class="bg-red-400 shadow-lg hover:shadow-xl px-3 py-2 m-4 hover:bg-red-500 duration-300 rounded-full" onclick="clearAlarm()" id="clear-alarm">Clear Alarm</button>
+        </div>
+    </section>
+    
+    <script src="./alarm.js"></script>
+</body>
+</html>
